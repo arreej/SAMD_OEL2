@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.InfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/PrimaryHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="@string/account_details" />
+
+        <Button
+            android:id="@+id/updateUser"
+            style="@style/ButtonRedStyle"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:drawableLeft="@drawable/ic_baseline_edit_24"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="Edit Account"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/deleteUser"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_baseline_close_24"
+            android:drawablePadding="10dp"
+            android:text="Close Account"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            style="@style/ButtonRedStyle"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/logOut"
+            style="@style/ButtonRedStyle"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:text="Log out"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
